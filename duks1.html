@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="sr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AVENIR - Dukserica oversize kroja</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: white;
+            margin: 0;
+            font-family: helvetica, sans-serif;
+        }
+
+        .navbar {
+            background-color: white !important;
+            height: 120px;
+        }
+
+        .offcanvas {
+            width: 350px !important;
+            background-color: rgba(242, 242, 242, 0.9) !important;
+            color: black;
+        }
+
+        .pretraga-okvir {
+            padding: 20px;
+        }
+
+        .nazad-link {
+            text-decoration: none;
+            color: #777;
+            font-size: 24px;
+            display: block;
+            margin: 20px 0;
+        }
+
+        .glavna-slika {
+            width: 100%;
+            height: auto;
+        }
+
+        .sporedna-slika {
+            width: 100%;
+            height: auto;
+            margin-bottom: 15px;
+        }
+
+        .cena {
+            font-size: 32px;
+            font-weight: bold;
+            margin-top: 10px;
+            color: black;
+        }
+
+        .boje {
+            display: flex;
+            gap: 10px;
+            margin: 15px 0;
+        }
+
+        .boja-krug {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            border: 1px solid #ddd;
+        }
+
+        .velicine-naslov {
+            font-size: 14px;
+            margin-top: 20px;
+            color: black;
+        }
+
+        .velicine-lista {
+            display: flex;
+            gap: 15px;
+            font-size: 24px;
+            margin-top: 10px;
+        }
+
+        .velicina-item {
+            color: black;
+            text-decoration: none;
+        }
+
+        .btn-korpa {
+            background-color: #f2d7d5;
+            color: black;
+            border: none;
+            padding: 15px 40px;
+            border-radius: 30px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 50px;
+            font-weight: bold;
+        }
+
+        .omiljeno-ikona {
+            font-size: 30px;
+            margin-left: 15px;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar sticky-top border-bottom">
+        <div class="container-fluid">
+            <button class="btn btn-outline-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling">
+                meni
+            </button>
+            <a href="#" class="navbar-brand mx-auto">
+                <img src="avenir.png" alt="Logo" height="100">
+            </a>
+            <div class="d-flex">
+                <img src="omilj.png" width="30" class="me-2">
+                <img src="korpica.png" width="30" class="me-2">
+                <img src="user.png" width="30">
+            </div>
+        </div>
+    </nav>
+
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" id="offcanvasScrolling">
+        <div class="offcanvas-header border-bottom">
+            <h5 class="offcanvas-title">MENI</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <h3>Žene</h3>
+            <h3 class="text-secondary">Muškarci</h3>
+            <br>
+            <p><strong>Odeća</strong></p>
+            <ul class="list-unstyled ms-3 text-secondary">
+                <li>Haljine i kombinezoni</li>
+                <li><a href="majice.html" style="color: inherit; text-decoration: none;">Majice i džemperi</a></li>
+                <li>Pantalone i farmerke</li>
+                <li>Suknje i šorcevi</li>
+                <li>Jakne i kaputi</li>
+                <li>Kompleti</li>
+            </ul>
+        </div>
+        <div class="pretraga-okvir">
+            <input type="text" class="form-control rounded-pill" placeholder="Pretraži">
+        </div>
+    </div>
+
+    <div class="container">
+        <a href="duksevi.htm" class="nazad-link">< Dukserica oversize kroja</a>
+
+        <div class="row">
+            <div class="col-md-5">
+                <img src="s1.jpg" class="glavna-slika">
+            </div>
+
+            <div class="col-md-3">
+                <img src="sl6.jpg" class="sporedna-slika">
+                <img src="sl7.jpg" class="sporedna-slika">
+            </div>
+
+            <div class="col-md-4 px-4">
+                <div class="cena">3499RSD</div>
+                
+                <div class="boje">
+                    <div class="boja-krug" style="background-color: #5b0a0a;"></div>
+                    <div class="boja-krug" style="background-color: #f5f5dc;"></div>
+                    <div class="boja-krug" style="background-color: black;"></div>
+                </div>
+
+                <div class="velicine-naslov">izaberi veličinu:</div>
+                <div class="velicine-lista">
+                    <span class="velicina-item">XS</span>
+                    <span class="velicina-item">S</span>
+                    <span class="velicina-item">M</span>
+                    <span class="velicina-item">L</span>
+                    <span class="velicina-item">XL</span>
+                </div>
+
+                <div>
+                    <a href="korpa.html" class="btn-korpa">dodaj u korpu</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

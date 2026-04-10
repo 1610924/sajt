@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="sr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AVENIR - Uspeh</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(to top, #EBD3CF 0%, #ffffff 50%);
+            height: 100vh;
+            margin: 0;
+            font-family: helvetica, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .navbar {
+            background-color: white !important;
+            height: 120px;
+        }
+
+        .offcanvas {
+            width: 350px !important;
+            background-color: rgba(242, 242, 242, 0.9) !important;
+            color: black;
+        }
+
+        .pretraga-okvir {
+            padding: 20px;
+        }
+
+        /* Glavni sadržaj na sredini */
+        .uspeh-kontejner {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .uspeh-poruka {
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: black;
+        }
+
+        .btn-nazad {
+            background-color: #f2d7d5;
+            color: black;
+            border: none;
+            padding: 12px 60px;
+            border-radius: 25px;
+            text-decoration: none;
+            display: inline-block;
+            font-weight: normal;
+            font-size: 24px;
+        }
+
+        /* Donji gradijent na ekranu */
+        .donji-gradijent {
+            height: 200px;
+            background: linear-gradient(to bottom, white, #e8d1cf);
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar sticky-top border-bottom">
+        <div class="container-fluid">
+            <button class="btn btn-outline-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling">
+                meni
+            </button>
+            <a href="index.html" class="navbar-brand mx-auto">
+                <img src="avenir.png" alt="Logo" height="100">
+            </a>
+            <div class="d-flex">
+                <img src="omilj.png" width="30" class="me-2">
+                <img src="korpica.png" width="30" class="me-2">
+                <img src="user.png" width="30">
+            </div>
+        </div>
+    </nav>
+
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" id="offcanvasScrolling">
+        <div class="offcanvas-header border-bottom">
+            <h5 class="offcanvas-title">MENI</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <h3>Žene</h3>
+            <h3 class="text-secondary">Muškarci</h3>
+            <br>
+            <p><strong>Odeća</strong></p>
+            <ul class="list-unstyled ms-3 text-secondary">
+                <li>Haljine i kombinezoni</li>
+                <li><a href="majice.html" style="color: inherit; text-decoration: none;">Majice i džemperi</a></li>
+                <li>Pantalone i farmerke</li>
+                <li>Suknje i šorcevi</li>
+                <li>Jakne i kaputi</li>
+                <li>Kompleti</li>
+            </ul>
+        </div>
+        <div class="pretraga-okvir">
+            <input type="text" class="form-control rounded-pill" placeholder="Pretraži">
+        </div>
+    </div>
+
+    <div class="uspeh-kontejner">
+        <h1 class="uspeh-poruka">Transakcija uspešno izvršena!</h1>
+        <a href="home.html" class="btn-nazad">nazad na početak</a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
